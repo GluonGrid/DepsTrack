@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DepsTrack"
+version = "0.1.0"
+description = "A tool to track dependencies for updates, deprecations, and vulnerabilities."
+readme = "README.md"
+authors = [{ name = "GluonGrid", email = "gluon.grid@gmail.com" }]
+dependencies = ["requests", "colorama", "packaging", "cvss"]
+
+[project.scripts]
+depstrack = "depstrack.cli:main"
